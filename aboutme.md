@@ -5,7 +5,7 @@ subtitle: I am Jie Lou
 ---
 
 
-![](img/me.jpg?raw=True)
+![](img/sheep.jpg?raw=True)
 
 ## Who am I?
 
