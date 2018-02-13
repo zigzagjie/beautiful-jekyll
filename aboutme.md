@@ -5,7 +5,7 @@ subtitle: I am Jie Lou
 ---
 
 
-![](img/sheep.jpg?raw=True)
+![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/me.jpg)
 
 ## Who am I?
 
@@ -17,7 +17,7 @@ This website was created on Feb. 13th, 2018. It is not too late. I am really new
 
 ### More about Me
 
-![](/img/me2.JPG?raw=True)
+![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/me2.JPG)
 
 - from Shanghai, China
 - Love traveling
