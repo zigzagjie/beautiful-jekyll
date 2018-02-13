@@ -1,16 +1,26 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: I am Jie Lou
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+## Welcome to My GitHub Pages
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I am Jie Lou, a graudate student studying information systems at Carnegie Mellon University. This is my personal website to show some hands-on projects on data science. You can reach me via [LinkedIn Profile](https://www.linkedin.com/in/jielou/). I am more than happy to discuss with you.
 
-What else do you need?
+The website was created on Feb. 6th, 2018. It is not too late. I am really new to html and markdown file to edit web pages. However, I believe I will add more content in the coming future.
 
-### my history
+### More about Me
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+![](zigzagjie.github.io/20170727_201907397_iOS.jpg?raw=True)
+
+*from Shanghai, China
+*Love traveling
+*live in Adelaide, Australia
+*Using Python and R pretty well
+
+
+### Data Science
+
+*online course
+*internship project
