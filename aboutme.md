@@ -2,10 +2,11 @@
 layout: page
 title: About me
 subtitle: I am Jie Lou
+
 ---
 
 
-![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/me.jpg)
+![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/me3.jpg)
 
 ## Who am I?
 
