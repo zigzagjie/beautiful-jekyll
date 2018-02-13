@@ -6,7 +6,7 @@ subtitle: I am Jie Lou
 ---
 
 
-![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/me3.jpg)
+![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/me.jpg)
 
 ## Who am I?
 
