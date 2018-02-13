@@ -6,6 +6,7 @@ subtitle: I am Jie Lou
 
 
 ![](/img/me.jpg?raw=True)
+
 ## Who am I?
 
 I am Jie Lou, a graudate student studying information systems Management(Global MISM) at Carnegie Mellon University. I studied Statistics and Mathematics at University of Missouri, COlumbia from 2015 to 2017. I was exchanged here when I studied in East China Normal University. 
@@ -16,15 +17,17 @@ This website was created on Feb. 13th, 2018. It is not too late. I am really new
 
 ### More about Me
 
-![](/img/me.jpg?raw=True)
+![](/img/me2.JPG?raw=True)
 
 - from Shanghai, China
 - Love traveling
+- Gym, Book and Music
 - live in Adelaide, Australia
-- Using Python and R pretty well
+
 
 
 ### Data Science
 
 - I am self-learning deep learning and data science with Python
 - I am doing some cool projects in data science
+- Using Python and R pretty well
