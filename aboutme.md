@@ -4,6 +4,8 @@ title: About me
 subtitle: I am Jie Lou
 ---
 
+
+![](/img/WeChat Image_20170604215510.jpg?raw=True)
 ## Who am I?
 
 I am Jie Lou, a graudate student studying information systems Management(Global MISM) at Carnegie Mellon University. I studied Statistics and Mathematics at University of Missouri, COlumbia from 2015 to 2017. I was exchanged here when I studied in East China Normal University. 
