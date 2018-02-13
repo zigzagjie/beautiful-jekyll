@@ -43,20 +43,20 @@ avatar: "/img/avatar-icon.png"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#FFCD51"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#F5F5F5"
+footer-col: "#C67BFC"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-navbar-img: "zigzagjie.github.io/20170727_201907397_iOS.jpg?raw=True"
+navbar-img: "/img/WeChat Image_20170604215510.jpg"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
 
@@ -74,9 +74,9 @@ author:
 social-network-links:
   rss: true
   email: "jlou1@andrew.cmu.edu"
-  facebook: daattali
-# github: zigzagjie
-  twitter: daattali
+# facebook: daattali
+  github: zigzagjie
+# twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
   linkedin: jielou
@@ -100,7 +100,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "https://zigzagjie.github.io/jieloudata/"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
