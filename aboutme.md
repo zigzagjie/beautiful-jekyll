@@ -14,7 +14,7 @@ This website was created on Feb. 13th, 2018. It is not too late. I am really new
 
 ### More about Me
 
-![](zigzagjie.github.io/20170727_201907397_iOS.jpg?raw=True)
+![](/img/WeChat Image_20170604215510.jpg?raw=True)
 
 - from Shanghai, China
 - Love traveling
