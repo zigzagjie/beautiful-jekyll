@@ -1,5 +1,7 @@
 
-## Titanic Dataset is a classic Dataset for classfication problem in data science. Through this project, I will walk through logistic regression, SVM, decisioni trees, random forests and neural networks.
+# Titanic Dataset is a classic Dataset for classfication problem in data science Competition platform: Kaggle. Through this project, I will walk through the entire data science pipeline, data collection, data manipulation, data wraggling, data visulization, data modeling and data evaluation. Machine learning techniques include logistic regression, SVM, decisioni trees, random forests and neural networks.
+
+## This is the first part of the whole project. The codes is run on Python. 
 
 ### import important packages
 
@@ -11,7 +13,7 @@ import seaborn as sns
 import numpy as np
 ```
 
-### read titanic traning dataset
+### Read titanic traning dataset
 
 
 ```python
@@ -309,9 +311,9 @@ titanic.describe()
 
 There are some missing values in Age column
 
-## Visualize some columns
+### Visualize some columns
 
-### **Visualize the distributions of Survivial**
+#### **Visualize the distributions of Survivial**
 
 
 ```python
@@ -347,10 +349,10 @@ sns.countplot(x='Survived',data=titanic)
 
 
 
-![png](output_19_1.png)
+![png](/Titanic_project/output_19_1.png)
 
 
-### Visualize the distribution of sex
+#### Visualize the distribution of sex
 
 
 ```python
@@ -379,17 +381,17 @@ sns.countplot(x='Sex',data=titanic)
 
 
 
-![png](output_22_1.png)
+![png](/Titanic_project/output_22_1.png)
 
 
-## Visualize the distribution of Age
+#### Visualize the distribution of Age
 
 
 ```python
 #sns.distplot(titanic['Age'])                  #error because of missing values
 ```
 
-### Drop null values in age
+#### Drop null values in age
 
 
 ```python
@@ -404,7 +406,7 @@ sns.distplot(titanic['Age'].dropna())
 
 
 
-![png](output_26_1.png)
+![png](/Titanic_project/output_26_1.png)
 
 
 #### Use Pandas built-in visualization
@@ -438,7 +440,7 @@ titanic['Age'].plot(kind='hist')
 
 
 
-![png](output_29_1.png)
+![png](/Titanic_project/output_29_1.png)
 
 
 ### Visualize the distribution of PClass
