@@ -7,11 +7,11 @@ gh-badge: [star, fork, follow]
 tags: [Python]
 ---
 
-## Titanic Dataset is a classic Dataset for classfication problem in data science Competition platform: Kaggle. Through this project, I will walk through the entire data science pipeline, data collection, data manipulation, data wraggling, data visulization, data modeling and data evaluation. Machine learning techniques include logistic regression, SVM, decisioni trees, random forests and neural networks.
+Titanic Dataset is a classic Dataset for classfication problem in data science Competition platform: Kaggle. You can reach this introductory competition [here!](https://www.kaggle.com/c/titanic) Through this project, I will walk through the entire data science pipeline, data collection, data manipulation, data wraggling, data visulization, data modeling and data evaluation. Machine learning techniques include logistic regression, SVM, decisioni trees, random forests and neural networks.
 
-## This is the first part of the whole project. The codes is run on Python. 
+This is the first part of the whole project. The codes is run on Python. 
 
-### import important packages
+#### import important packages
 
 
 ```python
@@ -21,14 +21,17 @@ import seaborn as sns
 import numpy as np
 ```
 
-### Read titanic traning dataset
+
+
+#### Read titanic traning dataset
 
 
 ```python
 titanic = pd.read_csv('train.csv')
 ```
 
-### Check the first 5 rows of train dataset
+
+#### Check the first 5 rows of train dataset
 
 
 ```python
@@ -152,7 +155,8 @@ titanic.head()
 
 
 
-### Check the attributes we got
+
+#### Check the attributes we got
 
 
 ```python
@@ -178,6 +182,9 @@ titanic.info()
     memory usage: 83.6+ KB
     
 
+
+
+#### From Kaggle's website, we can clearly see the meaning of each attribute
 **Variable** | **Definition** | **Key**
 ------------ | -------------- | ---------------
 survival  | Survival   | 0 = No, 1 = Yes
@@ -319,9 +326,9 @@ titanic.describe()
 
 There are some missing values in Age column
 
-### Visualize some columns
+#### Visualize some columns
 
-#### **Visualize the distributions of Survivial**
+##### **Visualize the distributions of Survivial**
 
 
 ```python
@@ -360,7 +367,8 @@ sns.countplot(x='Survived',data=titanic)
 ![png](/_posts/Titanic_Project/output_19_1.png)
 
 
-#### Visualize the distribution of sex
+
+##### Visualize the distribution of sex
 
 
 ```python
@@ -392,14 +400,16 @@ sns.countplot(x='Sex',data=titanic)
 ![png](/_posts/Titanic_Project/output_22_1.png)
 
 
-#### Visualize the distribution of Age
+
+##### Visualize the distribution of Age
 
 
 ```python
 #sns.distplot(titanic['Age'])                  #error because of missing values
 ```
 
-#### Drop null values in age
+
+##### Drop null values in age
 
 
 ```python
@@ -417,7 +427,8 @@ sns.distplot(titanic['Age'].dropna())
 ![png](/_posts/Titanic_Project/output_26_1.png)
 
 
-#### Use Pandas built-in visualization
+
+##### Use Pandas built-in visualization
 
 
 ```python
@@ -451,7 +462,8 @@ titanic['Age'].plot(kind='hist')
 ![png](/_posts/Titanic_Project/output_29_1.png)
 
 
-### Visualize the distribution of PClass
+
+#### Visualize the distribution of PClass
 
 
 ```python
@@ -468,7 +480,8 @@ titanic['Pclass'].value_counts()
 
 
 
-### Visualize the distribution of Parch # parents/children
+
+#### Visualize the distribution of Parch # parents/children
 
 
 ```python
@@ -486,7 +499,8 @@ sns.countplot(x='Pclass',data=titanic)
 ![png](/_posts/Titanic_Project/output_33_1.png)
 
 
-### Visualize fares
+
+#### Visualize fares
 
 
 ```python
@@ -523,7 +537,9 @@ sns.distplot(titanic['Fare'])
 
 There might be some outliers in the Fare Column
 
-## Visualize the distribution of #of Siblings/Spouses
+
+
+### Visualize the distribution of #of Siblings/Spouses
 
 
 ```python
@@ -557,9 +573,10 @@ sns.countplot(x='Parch',data=titanic)
 ![png](/_posts/Titanic_Project/output_40_1.png)
 
 
-## Bi-variate Analysis
 
-### Sex with Survival
+### Bi-variate Analysis
+
+#### Sex with Survival
 
 
 ```python
@@ -577,7 +594,8 @@ sns.countplot(x='Survived',hue='Sex',data=titanic)
 ![png](/_posts/Titanic_Project/output_43_1.png)
 
 
-### Fare with Survival 
+
+#### Fare with Survival 
 
 
 ```python
@@ -595,9 +613,9 @@ sns.boxplot(x='Survived',y='Fare',data=titanic)
 ![png](/_posts/Titanic_Project/output_45_1.png)
 
 
-### It indicated that people those survived had more expensive fares. Also, in People who survived, there was one cost over 500. It might indicate the outliers. 
+#### It indicated that people those survived had more expensive fares. Also, in People who survived, there was one cost over 500. It might indicate the outliers. 
 
-### You can also visualize how sex differs with different fare and different sexes 
+#### You can also visualize how sex differs with different fare and different sexes 
 
 
 ```python
@@ -615,9 +633,10 @@ sns.boxplot(x='Survived',y='Fare',hue='Sex',data=titanic)
 ![png](/_posts/Titanic_Project/output_48_1.png)
 
 
-### We may have to handle fares data
 
-### Number of Sibilings/family 
+#### We may have to handle fares data
+
+#### Number of Sibilings/family 
 
 
 ```python
@@ -635,7 +654,7 @@ sns.countplot(hue='Survived',x='SibSp',data=titanic)
 ![png](/_posts/Titanic_Project/output_51_1.png)
 
 
-### People who have one sibling/spouse survived more likely that the single people
+#### People who have one sibling/spouse survived more likely that the single people
 
 
 ```python
@@ -653,9 +672,10 @@ sns.countplot(hue='Survived',x='Parch',data=titanic)
 ![png](/_posts/Titanic_Project/output_53_1.png)
 
 
-## Missing Values
 
-### there is missing value in age column and cabin column
+### Missing Values
+
+#### there is missing value in age column and cabin column
 
 
 ```python
@@ -779,7 +799,7 @@ titanic.isnull().head()
 
 
 
-### Visualize the missing values
+#### Visualize the missing values
 
 
 ```python
@@ -797,6 +817,7 @@ sns.heatmap(titanic.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 ![png](/_posts/Titanic_Project/output_58_1.png)
 
 
-### Cabin has a lot of missing values, we may just drop this colum. There are some missing values in Age column. We may have to handle them well because age might be an important attribute
 
-### Next Part will introduce Handling Missing Values and Outliers
+#### Cabin has a lot of missing values, we may just drop this colum. There are some missing values in Age column. We may have to handle them well because age might be an important attribute
+
+#### Next Part will introduce Handling Missing Values and Outliers
