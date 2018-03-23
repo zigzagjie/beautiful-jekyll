@@ -357,7 +357,7 @@ sns.countplot(x='Survived',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_19_1.png)
+![png](/_posts/Titanic_Project/output_19_1.png)
 
 
 #### Visualize the distribution of sex
@@ -389,7 +389,7 @@ sns.countplot(x='Sex',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_22_1.png)
+![png](/_posts/Titanic_Project/output_22_1.png)
 
 
 #### Visualize the distribution of Age
@@ -414,7 +414,7 @@ sns.distplot(titanic['Age'].dropna())
 
 
 
-![png](/_posts/Titanic_project/output_26_1.png)
+![png](/_posts/Titanic_Project/output_26_1.png)
 
 
 #### Use Pandas built-in visualization
@@ -432,7 +432,7 @@ titanic['Age'].hist(bins=30)
 
 
 
-![png](/_posts/Titanic_project/output_28_1.png)
+![png](/_posts/Titanic_Project/output_28_1.png)
 
 
 
@@ -448,7 +448,7 @@ titanic['Age'].plot(kind='hist')
 
 
 
-![png](/_posts/Titanic_project/output_29_1.png)
+![png](/_posts/Titanic_Project/output_29_1.png)
 
 
 ### Visualize the distribution of PClass
@@ -483,7 +483,7 @@ sns.countplot(x='Pclass',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_33_1.png)
+![png](/_posts/Titanic_Project/output_33_1.png)
 
 
 ### Visualize fares
@@ -502,7 +502,7 @@ titanic['Fare'].hist(bins=30)
 
 
 
-![png](/_posts/Titanic_project/output_35_1.png)
+![png](/_posts/Titanic_Project/output_35_1.png)
 
 
 
@@ -518,7 +518,7 @@ sns.distplot(titanic['Fare'])
 
 
 
-![png](/_posts/Titanic_project/output_36_1.png)
+![png](/_posts/Titanic_Project/output_36_1.png)
 
 
 There might be some outliers in the Fare Column
@@ -538,7 +538,7 @@ sns.countplot(x='SibSp',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_39_1.png)
+![png](/_posts/Titanic_Project/output_39_1.png)
 
 
 
@@ -554,7 +554,7 @@ sns.countplot(x='Parch',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_40_1.png)
+![png](/_posts/Titanic_Project/output_40_1.png)
 
 
 ## Bi-variate Analysis
@@ -574,7 +574,7 @@ sns.countplot(x='Survived',hue='Sex',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_43_1.png)
+![png](/_posts/Titanic_Project/output_43_1.png)
 
 
 ### Fare with Survival 
@@ -592,7 +592,7 @@ sns.boxplot(x='Survived',y='Fare',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_45_1.png)
+![png](/_posts/Titanic_Project/output_45_1.png)
 
 
 ### It indicated that people those survived had more expensive fares. Also, in People who survived, there was one cost over 500. It might indicate the outliers. 
@@ -612,7 +612,7 @@ sns.boxplot(x='Survived',y='Fare',hue='Sex',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_48_1.png)
+![png](/_posts/Titanic_Project/output_48_1.png)
 
 
 ### We may have to handle fares data
@@ -632,7 +632,7 @@ sns.countplot(hue='Survived',x='SibSp',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_51_1.png)
+![png](/_posts/Titanic_Project/output_51_1.png)
 
 
 ### People who have one sibling/spouse survived more likely that the single people
@@ -650,7 +650,7 @@ sns.countplot(hue='Survived',x='Parch',data=titanic)
 
 
 
-![png](/_posts/Titanic_project/output_53_1.png)
+![png](/_posts/Titanic_Project/output_53_1.png)
 
 
 ## Missing Values
@@ -794,7 +794,7 @@ sns.heatmap(titanic.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
 
 
-![png](/_posts/Titanic_project/output_58_1.png)
+![png](/_posts/Titanic_Project/output_58_1.png)
 
 
 ### Cabin has a lot of missing values, we may just drop this colum. There are some missing values in Age column. We may have to handle them well because age might be an important attribute
