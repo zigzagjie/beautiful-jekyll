@@ -1,5 +1,13 @@
+---
+layout: post
+title: Exploratory Data Analysis with Titanic Project Part I
+subtitle: This is a introductory data science project walking through Python
+gh-repo: zigzagjie/datascience
+gh-badge: [star, fork, follow]
+tags: [Python]
+---
 
-# Titanic Dataset is a classic Dataset for classfication problem in data science Competition platform: Kaggle. Through this project, I will walk through the entire data science pipeline, data collection, data manipulation, data wraggling, data visulization, data modeling and data evaluation. Machine learning techniques include logistic regression, SVM, decisioni trees, random forests and neural networks.
+## Titanic Dataset is a classic Dataset for classfication problem in data science Competition platform: Kaggle. Through this project, I will walk through the entire data science pipeline, data collection, data manipulation, data wraggling, data visulization, data modeling and data evaluation. Machine learning techniques include logistic regression, SVM, decisioni trees, random forests and neural networks.
 
 ## This is the first part of the whole project. The codes is run on Python. 
 
@@ -349,7 +357,7 @@ sns.countplot(x='Survived',data=titanic)
 
 
 
-![png](/Titanic_project/output_19_1.png)
+![png](/_posts/Titanic_project/output_19_1.png)
 
 
 #### Visualize the distribution of sex
@@ -381,7 +389,7 @@ sns.countplot(x='Sex',data=titanic)
 
 
 
-![png](/Titanic_project/output_22_1.png)
+![png](/_posts/Titanic_project/output_22_1.png)
 
 
 #### Visualize the distribution of Age
@@ -406,7 +414,7 @@ sns.distplot(titanic['Age'].dropna())
 
 
 
-![png](/Titanic_project/output_26_1.png)
+![png](/_posts/Titanic_project/output_26_1.png)
 
 
 #### Use Pandas built-in visualization
@@ -424,7 +432,7 @@ titanic['Age'].hist(bins=30)
 
 
 
-![png](output_28_1.png)
+![png](/_posts/Titanic_project/output_28_1.png)
 
 
 
@@ -440,7 +448,7 @@ titanic['Age'].plot(kind='hist')
 
 
 
-![png](/Titanic_project/output_29_1.png)
+![png](/_posts/Titanic_project/output_29_1.png)
 
 
 ### Visualize the distribution of PClass
@@ -475,7 +483,7 @@ sns.countplot(x='Pclass',data=titanic)
 
 
 
-![png](output_33_1.png)
+![png](/_posts/Titanic_project/output_33_1.png)
 
 
 ### Visualize fares
@@ -494,7 +502,7 @@ titanic['Fare'].hist(bins=30)
 
 
 
-![png](output_35_1.png)
+![png](/_posts/Titanic_project/output_35_1.png)
 
 
 
@@ -510,7 +518,7 @@ sns.distplot(titanic['Fare'])
 
 
 
-![png](output_36_1.png)
+![png](/_posts/Titanic_project/output_36_1.png)
 
 
 There might be some outliers in the Fare Column
@@ -530,7 +538,7 @@ sns.countplot(x='SibSp',data=titanic)
 
 
 
-![png](output_39_1.png)
+![png](/_posts/Titanic_project/output_39_1.png)
 
 
 
@@ -546,7 +554,7 @@ sns.countplot(x='Parch',data=titanic)
 
 
 
-![png](output_40_1.png)
+![png](/_posts/Titanic_project/output_40_1.png)
 
 
 ## Bi-variate Analysis
@@ -566,7 +574,7 @@ sns.countplot(x='Survived',hue='Sex',data=titanic)
 
 
 
-![png](output_43_1.png)
+![png](/_posts/Titanic_project/output_43_1.png)
 
 
 ### Fare with Survival 
@@ -584,7 +592,7 @@ sns.boxplot(x='Survived',y='Fare',data=titanic)
 
 
 
-![png](output_45_1.png)
+![png](/_posts/Titanic_project/output_45_1.png)
 
 
 ### It indicated that people those survived had more expensive fares. Also, in People who survived, there was one cost over 500. It might indicate the outliers. 
@@ -604,7 +612,7 @@ sns.boxplot(x='Survived',y='Fare',hue='Sex',data=titanic)
 
 
 
-![png](output_48_1.png)
+![png](/_posts/Titanic_project/output_48_1.png)
 
 
 ### We may have to handle fares data
@@ -624,7 +632,7 @@ sns.countplot(hue='Survived',x='SibSp',data=titanic)
 
 
 
-![png](output_51_1.png)
+![png](/_posts/Titanic_project/output_51_1.png)
 
 
 ### People who have one sibling/spouse survived more likely that the single people
@@ -642,7 +650,7 @@ sns.countplot(hue='Survived',x='Parch',data=titanic)
 
 
 
-![png](output_53_1.png)
+![png](/_posts/Titanic_project/output_53_1.png)
 
 
 ## Missing Values
@@ -786,9 +794,9 @@ sns.heatmap(titanic.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
 
 
-![png](output_58_1.png)
+![png](/_posts/Titanic_project/output_58_1.png)
 
 
 ### Cabin has a lot of missing values, we may just drop this colum. There are some missing values in Age column. We may have to handle them well because age might be an important attribute
 
-### Handling Missing Values
+### Next Part will introduce Handling Missing Values and Outliers
