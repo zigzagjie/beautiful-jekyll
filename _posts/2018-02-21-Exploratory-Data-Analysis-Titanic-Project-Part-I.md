@@ -185,20 +185,18 @@ titanic.info()
 
 
 #### From Kaggle's website, we can clearly see the meaning of each attribute
-**Variable** | **Definition** | **Key**
------------- | -------------- | ---------------
-survival  | Survival   | 0 = No, 1 = Yes
-pclass  | Ticket class  |       1 = 1st, 2 = 2nd, 3 = 3rd
-sex     |             Sex
-Age      |         Age in years
-sibsp     |        # of siblings / spouses aboard the Titanic
-parch      |       # of parents / children aboard the Titanic
-ticket      |      Ticket number
-fare         |     Passenger fare
-cabin         |    Cabin number
-embarked       |   Port of Embarkation           |                     C = Cherbourg, Q = Queenstown, S = Southampton
-
-attributes with its meaning
+|**Variable** | **Definition** | **Key**
+|------------ | -------------- | ---------------|
+|survival  | Survival   | 0 = No, 1 = Yes|
+|pclass  | Ticket class  |       1 = 1st, 2 = 2nd, 3 = 3rd|
+|sex     |             Sex|
+|Age     |         Age in years|
+|sibsp   |        # of siblings / spouses aboard the Titanic|
+|parch   |       # of parents / children aboard the Titanic|
+|ticket  |      Ticket number|
+|fare    |     Passenger fare|
+|cabin    |    Cabin number|
+|embarked   |   Port of Embarkation | C = Cherbourg, Q = Queenstown, S = Southampton|
 
 ### Get the descriptive statistics of each column (only for numberic variables)
 
@@ -349,11 +347,13 @@ survive.value_counts()
 
 
 
+
 More people did not survive
 
 
 ```python
 sns.countplot(x='Survived',data=titanic)
+
 ```
 
 
@@ -364,7 +364,7 @@ sns.countplot(x='Survived',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_19_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_19_1.png)
 
 
 
