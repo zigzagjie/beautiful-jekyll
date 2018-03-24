@@ -7,7 +7,7 @@ gh-badge: [star, fork, follow]
 tags: [Python]
 ---
 
-Titanic Dataset is a classic Dataset for classfication problem in data science Competition platform: Kaggle. You can reach this introductory competition [here!](https://www.kaggle.com/c/titanic) Through this project, I will walk through the entire data science pipeline, data collection, data manipulation, data wraggling, data visulization, data modeling and data evaluation. Machine learning techniques include logistic regression, SVM, decisioni trees, random forests and neural networks.
+Titanic Dataset is a classic Dataset for classfication problem in data science Competition platform: Kaggle. You can reach this introductory competition [here](https://www.kaggle.com/c/titanic) Through this project, I will walk through the entire data science pipeline, data collection, data manipulation, data wraggling, data visulization, data modeling and data evaluation. Machine learning techniques include logistic regression, SVM, decisioni trees, random forests and neural networks.
 
 This is the first part of the whole project. The codes is run on Python. 
 
@@ -185,18 +185,18 @@ titanic.info()
 
 
 #### From Kaggle's website, we can clearly see the meaning of each attribute
-|**Variable** | **Definition** | **Key**
-|------------ | -------------- | ---------------|
-|survival  | Survival   | 0 = No, 1 = Yes|
-|pclass  | Ticket class  |       1 = 1st, 2 = 2nd, 3 = 3rd|
-|sex     |             Sex|
-|Age     |         Age in years|
-|sibsp   |        # of siblings / spouses aboard the Titanic|
-|parch   |       # of parents / children aboard the Titanic|
-|ticket  |      Ticket number|
-|fare    |     Passenger fare|
-|cabin    |    Cabin number|
-|embarked   |   Port of Embarkation | C = Cherbourg, Q = Queenstown, S = Southampton|
+| Variable | Definition | Key |
+| ------------ | -------------- | --------------- |
+| survival  | Survival   | 0 = No, 1 = Yes |
+| pclass  | Ticket class  | 1 = 1st, 2 = 2nd, 3 = 3rd |
+| sex     |  Sex |
+| Age     |  Age in years |
+| sibsp   |  # of siblings / spouses aboard the Titanic |
+| parch   |  # of parents / children aboard the Titanic |
+| ticket  | Ticket number |
+| fare    | Passenger fare |
+| cabin   | Cabin number |
+| embarked | Port of Embarkation | C = Cherbourg, Q = Queenstown, S = Southampton |
 
 ### Get the descriptive statistics of each column (only for numberic variables)
 
@@ -323,7 +323,7 @@ titanic.describe()
 
 
 There are some missing values in Age column
-
+* ### Data Visualization
 #### Visualize some columns
 
 ##### **Visualize the distributions of Survivial**
@@ -397,7 +397,7 @@ sns.countplot(x='Sex',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_22_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_22_1.png)
 
 
 
@@ -424,7 +424,7 @@ sns.distplot(titanic['Age'].dropna())
 
 
 
-![png](/_posts/Titanic_Project/output_26_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_26_1.png)
 
 
 
@@ -443,7 +443,7 @@ titanic['Age'].hist(bins=30)
 
 
 
-![png](/_posts/Titanic_Project/output_28_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_28_1.png)
 
 
 
@@ -459,7 +459,7 @@ titanic['Age'].plot(kind='hist')
 
 
 
-![png](/_posts/Titanic_Project/output_29_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_29_1.png)
 
 
 
@@ -496,7 +496,7 @@ sns.countplot(x='Pclass',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_33_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_33_1.png)
 
 
 
@@ -516,7 +516,7 @@ titanic['Fare'].hist(bins=30)
 
 
 
-![png](/_posts/Titanic_Project/output_35_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_35_1.png)
 
 
 
@@ -532,7 +532,7 @@ sns.distplot(titanic['Fare'])
 
 
 
-![png](/_posts/Titanic_Project/output_36_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_36_1.png)
 
 
 There might be some outliers in the Fare Column
@@ -554,7 +554,7 @@ sns.countplot(x='SibSp',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_39_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_39_1.png)
 
 
 
@@ -570,7 +570,7 @@ sns.countplot(x='Parch',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_40_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_40_1.png)
 
 
 
@@ -591,7 +591,7 @@ sns.countplot(x='Survived',hue='Sex',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_43_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_43_1.png)
 
 
 
@@ -610,7 +610,7 @@ sns.boxplot(x='Survived',y='Fare',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_45_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_45_1.png)
 
 
 #### It indicated that people those survived had more expensive fares. Also, in People who survived, there was one cost over 500. It might indicate the outliers. 
@@ -630,7 +630,7 @@ sns.boxplot(x='Survived',y='Fare',hue='Sex',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_48_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_48_1.png)
 
 
 
@@ -651,7 +651,7 @@ sns.countplot(hue='Survived',x='SibSp',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_51_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_51_1.png)
 
 
 #### People who have one sibling/spouse survived more likely that the single people
@@ -669,7 +669,7 @@ sns.countplot(hue='Survived',x='Parch',data=titanic)
 
 
 
-![png](/_posts/Titanic_Project/output_53_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_53_1.png)
 
 
 
@@ -814,7 +814,7 @@ sns.heatmap(titanic.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
 
 
-![png](/_posts/Titanic_Project/output_58_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/_posts/Titanic_Project/output_58_1.png)
 
 
 
