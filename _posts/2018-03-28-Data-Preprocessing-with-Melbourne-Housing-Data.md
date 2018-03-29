@@ -310,7 +310,7 @@ sns.heatmap(housing.isnull(),yticklabels = False, cbar = False, cmap = 'plasma')
 
 
 
-![png](output_16_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_16_1.png)
 
 
 ### 2. Obtain descriptive statistics of some attributes.
@@ -621,7 +621,7 @@ housing['Price'].hist(bins=30)
 
 
 
-![png](output_27_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_27_1.png)
 
 
 
@@ -638,7 +638,7 @@ sns.distplot(housing['Price'].dropna(),bins=30)
 
 
 
-![png](output_28_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_28_1.png)
 
 
 
@@ -654,7 +654,7 @@ sns.boxplot(y='Price',data=housing)
 
 
 
-![png](output_29_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_29_1.png)
 
 
 Then apply the same techniques to **Rooms** column. 
@@ -723,7 +723,7 @@ housing['Rooms'].hist(bins=30)
 
 
 
-![png](output_35_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_35_1.png)
 
 
 
@@ -739,7 +739,7 @@ sns.countplot(housing['Rooms'])
 
 
 
-![png](output_36_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_36_1.png)
 
 
 
@@ -755,7 +755,7 @@ sns.boxplot(y=housing['Rooms'])
 
 
 
-![png](output_37_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_37_1.png)
 
 
 ### 3. Potential problem of data quality
@@ -2371,7 +2371,7 @@ housing.groupby('Age')['Price'].mean().plot()
 
 
 
-![png](output_57_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_57_1.png)
 
 
 Here, we found a age of 800. It could be true, but it seems an outlier. We choose to take it out.
@@ -2479,7 +2479,7 @@ ax.set_ylabel('Price')
 
 
 
-![png](output_62_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_62_1.png)
 
 
 **Interesting Finding!**
@@ -2705,7 +2705,7 @@ sns.factorplot(y='Price',x='Weekday',kind='bar',data=housing)
 
 
 
-![png](output_68_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_68_1.png)
 
 
 
@@ -2721,7 +2721,7 @@ sns.factorplot(y='Price',x='Year',kind='bar',data=housing)
 
 
 
-![png](output_69_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing/output_69_1.png)
 
 
 ## Conclusion
