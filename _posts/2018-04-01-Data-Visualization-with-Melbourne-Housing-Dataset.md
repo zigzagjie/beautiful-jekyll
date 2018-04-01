@@ -248,6 +248,7 @@ housing['Price(K)'] = housing['Price']/1000
 housing.drop('Price',axis = 1,inplace=True) 
 ```
 
+
 ** Dataset is ready for visualize. **
 
 ### Show, don't tell!
@@ -291,12 +292,7 @@ ax2.set_ylabel('Price(K)')
 
 
 
-    Text(0,0.5,'Price(K)')
-
-
-
-
-![png](output_9_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_9_1.png)
 
 
 It is kind of time series data. The price shivers within age. Also, the price shivers greater as age increases. It might indicate for properties of older age, other features have greater impact on its price. However, we can still infer that the older the property is, the more expensive is if the age is lower than 125. The property older thatn 130 seems to be as expensive as the ones 50 years old.
@@ -315,14 +311,6 @@ g1.ax.set_title('Price(K) VS Year')
 
 
 
-    Text(0.5,1,'Price(K) VS Year')
-
-
-
-
-    <matplotlib.figure.Figure at 0x25caf84a320>
-
-
 
 ![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_12_2.png)
 
@@ -335,17 +323,6 @@ plt.figure(figsize=(10,6))
 g2=sns.factorplot(y='Price(K)',x='Month',kind='bar',size=4, aspect =3,data=housing)
 g2.ax.set_title('Price(K) VS Month')
 ```
-
-
-
-
-    Text(0.5,1,'Price(K) VS Month')
-
-
-
-
-    <matplotlib.figure.Figure at 0x25cb1ec97f0>
-
 
 
 ![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_14_2.png)
@@ -362,16 +339,6 @@ g3.ax.set_title('Price(K) VS Week of Day')
 
 
 
-
-    Text(0.5,1,'Price(K) VS Week of Day')
-
-
-
-
-    <matplotlib.figure.Figure at 0x25cb23064e0>
-
-
-
 ![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_16_2.png)
 
 
@@ -383,17 +350,6 @@ plt.figure(figsize=(16,6))
 g4=sns.factorplot(y='Price(K)',x='Month',kind='bar',hue='Weekday',size=5, aspect =3,data=housing)
 g4.ax.set_title('Price(K) VS Month')
 ```
-
-
-
-
-    Text(0.5,1,'Price(K) VS Month')
-
-
-
-
-    <matplotlib.figure.Figure at 0x25cb22e8dd8>
-
 
 
 ![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_18_2.png)
@@ -410,12 +366,6 @@ Price(K) VS Distance
 plt.figure(figsize=(12,6))
 sns.regplot(x='Distance',y='Price(K)',data=housing,scatter_kws={'alpha':0.1},fit_reg=False)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x25caf9db4e0>
-
 
 
 
@@ -442,11 +392,6 @@ g5.ax.set_title('Price(K) VS Number of Rooms')
 
 
 
-    Text(0.5,1,'Price(K) VS Number of Rooms')
-
-
-
-
 ![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_24_1.png)
 
 
@@ -462,12 +407,6 @@ plt.figure(figsize=(12,6))
 ax3=sns.regplot(x='BuildingArea',y='Price(K)',data=housing,scatter_kws={'alpha':0.1},fit_reg=False)
 ax3.set_title('Price(k) VS BuildingArea')
 ```
-
-
-
-
-    Text(0.5,1,'Price(k) VS BuildingArea')
-
 
 
 
@@ -487,10 +426,6 @@ ax4.set_title('Price(K) VS BuildingArea(0-1100)')
 
 
 
-    Text(0.5,1,'Price(K) VS BuildingArea(0-1100)')
-
-
-
 
 ![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_28_1.png)
 
@@ -506,12 +441,6 @@ Price VS Region Name
 plt.figure(figsize=(12,6))
 housing.groupby('Regionname')['Price(K)'].mean().plot(kind='bar')
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x25cb1b25080>
-
 
 
 
