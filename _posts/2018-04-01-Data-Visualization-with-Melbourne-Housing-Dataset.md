@@ -1,7 +1,7 @@
 
-# Data Visualization
+# Data Visualization is Fun!
 
-In last post, I shared some codes how to clean data in Melbourne Housing Dataset. This part we will continue doing data exploration on Melbourne Housing dataset, especially within data visualization tools.
+In last post, I shared some codes how to clean data in Melbourne Housing Dataset. This part we will continue doing data exploration on Melbourne Housing dataset, especially within data visualization tools. Python and Tableau are both used.
 
 First, let's import packages, load dataset and complete data cleaning as we did last time.
 
@@ -272,7 +272,7 @@ ax1.set_xlim([0,8000])
 
 
 
-![png](output_6_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_6_1.png)
 
 
 It seems like price is right-skew distributed. Most of properties has price ranging from 500-1500(k) AUD. 
@@ -324,7 +324,7 @@ g1.ax.set_title('Price(K) VS Year')
 
 
 
-![png](output_12_2.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_12_2.png)
 
 
 Price from 2016-2018 did not have big changes. However, it should be noticed that scale is in 1000. 
@@ -348,7 +348,7 @@ g2.ax.set_title('Price(K) VS Month')
 
 
 
-![png](output_14_2.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_14_2.png)
 
 
 Properties sold on January and July had relatively lower price.
@@ -372,7 +372,7 @@ g3.ax.set_title('Price(K) VS Week of Day')
 
 
 
-![png](output_16_2.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_16_2.png)
 
 
 Properties sold on Wednesday had the lowest price. Should we buy a house on Wednesday then?
@@ -396,7 +396,7 @@ g4.ax.set_title('Price(K) VS Month')
 
 
 
-![png](output_18_2.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_18_2.png)
 
 
 When combining weekday with month, we can have a closer look at price difference in differnet days. It seems that Wednesday in November and Thursday in March would be a better choice. This plot can also tell us during first two months, properties were sold only on Friday. Why?? Properties were only sold on Wednesday in March and November.  
@@ -419,7 +419,7 @@ sns.regplot(x='Distance',y='Price(K)',data=housing,scatter_kws={'alpha':0.1},fit
 
 
 
-![png](output_21_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_21_1.png)
 
 
 From this plot, we can two main insights:
@@ -447,7 +447,7 @@ g5.ax.set_title('Price(K) VS Number of Rooms')
 
 
 
-![png](output_24_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_24_1.png)
 
 
 Actually, we can guess that the more room one property has, the bigger the property is. The bigger the property is, the more value it has. The guess is justified with those of 6 rooms. After it exceed 6 rooms, the rule is not applicable. SO.....Let's Viz6
@@ -471,7 +471,7 @@ ax3.set_title('Price(k) VS BuildingArea')
 
 
 
-![png](output_26_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_26_1.png)
 
 
 Let's take a closer look at x:(0,1000) part. In other words, ignore extreme values (They could be outliers).
@@ -492,7 +492,7 @@ ax4.set_title('Price(K) VS BuildingArea(0-1100)')
 
 
 
-![png](output_28_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_28_1.png)
 
 
 For buildingarea ranging from 0 and 400, it seems to be a positive linear trend. It is not clear due to too many overlapping points.
@@ -515,9 +515,41 @@ housing.groupby('Regionname')['Price(K)'].mean().plot(kind='bar')
 
 
 
-![png](output_31_1.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/output_31_1.png)
 
 
 Southern Metropolitan and Eastern Metropolitan are two regions which had the highest average housing price. You must be very curious about what these two regions. Let's take a look at Google Map!
 
-The remaining content will be posted on my personal website. Please take a look!
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/google.JPG)
+
+### Tableau
+
+Tableau is a strong tool specifically for data visualization. With student account, we can get one-year free trial. How generous! 
+These two regions are closer to CBD Melbourne. Also, it is clear that more properties locate around Philip Bay.
+
+Now, you must be wondering how price differ within different locations. Python can deal with geographical information, but Tableau is a simpler way to do. All you need to do is load dataset, drag features and choose plot tyle. 
+
+** Magic 1 **
+How properties locate with different regions?
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/distribution.JPG)
+
+How properties' price change within different locations?
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/price dis.JPG)
+
+The black points represent those properties with highest price. Most of them are in Southern Metropolitan and Eastern Metropolitan.
+
+Then just choose these luxury properties. We can find:
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/top.JPG)
+
+Yep!
+
+# Conclusion
+
+- Visualization helps you understand data better
+- various plots should be applied properly
+- Outliers can be detected in the plot (extreme values are not necessarily be outliers)
+- Missing values can also be visualized to find some pattern!
+
+# In the future
+
+- Handling Missing Values is important
