@@ -824,7 +824,7 @@ plt.grid()
 ```
 
 
-![png](output_31_0.png)
+![png](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/housing_vis/clv.png)
 
 
 
