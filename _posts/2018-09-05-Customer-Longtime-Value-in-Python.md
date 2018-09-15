@@ -15,7 +15,7 @@ This notebook goes through the calculation in [Practical Guide to Calculating Cu
 
 
 ```python
-customer.info()
+ customer.info()
 ```
 
     <class 'pandas.core.frame.DataFrame'>
@@ -31,7 +31,7 @@ customer.info()
 
 
 ```python
-customer.head()
+ customer.head()
 ```
 
 
@@ -107,15 +107,15 @@ There are some outliers in the dataset. We need to remove them. The details are 
 
 
 ```python
-#customer_new is the new dataset without outliers
-customer_new = customer[(customer.Amount<1000)&(customer.Amount>0)]
+ #customer_new is the new dataset without outliers
+ customer_new = customer[(customer.Amount<1000)&(customer.Amount>0)]
 ```
 
 ## Step 2. Determine origin year of customers
 
 
 ```python
-customer_new.head()
+ customer_new.head()
 ```
 
 
