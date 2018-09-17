@@ -1,3 +1,11 @@
+---
+layout: post
+title: Relational Dataset Manipulation
+subtitle: How to merge datasets in pandas?
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [Pandas]
+---
 
 # Pandas Selecting document summary
 
