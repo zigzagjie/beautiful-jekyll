@@ -47,13 +47,10 @@ From the beginning of year 2018, I embarked on a journey that I have never been,
 ## Topics I am interested in
 
 I believe a good data scientist should be good at communicating the findings. I am more interested in showcasing the results from data analysis and make instant impacts. 
-
 ### Social Network Analysis
-
     The world is full of networks. The form of network is not just limited to network on humans' connections like Facebook. Actually, network analysis on Facebook has yielded a lot of fun findings. Moreover, the interactions between people and jobs, people and local businesses are also of interest. Digging the mystery behind the network is a great charm to me.
 	
 ### Analytics in Entertainment Industry
-
      I love music and movies. I like drama and celebrities. I know some production and entertainment companies have applied machine learning to serve customers better in different ways, such as predicting the taste of audience, recommend potential likeable movies and music to customers. I would love to learn more in this area.
 
 ## Beyond Data
