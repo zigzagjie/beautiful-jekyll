@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Relational Dataset Manipulation
-subtitle: How to merge datasets in pandas?
-gh-repo: daattali/beautiful-jekyll
+title: Explore Network with Movie Dataset
+subtitle: Visualization with NetworkX in Python
+gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]
 tags: [Pandas]
 ---
@@ -112,7 +112,7 @@ movie.genres.apply(lambda x: convertList(x)).head()
 - Remove movies with empty genre list
 - Convert columns with list to several columns with binary info
 
-       Ex: for the first movie, its genres is [Action, Adventure, Fantasy, Science Fiction], then we create three corresponding columns to represent them and set its value as 1.
+Ex: for the first movie, its genres is [Action, Adventure, Fantasy, Science Fiction], then we create three corresponding columns to represent them and set its value as 1.
 
 
 ```python
