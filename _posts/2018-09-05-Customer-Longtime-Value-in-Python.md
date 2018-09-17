@@ -1,12 +1,3 @@
----
-layout: post
-title: Customer Longtime Value in Python
-subtitle: how to get customer longtime value in python?
-gh-repo: zigzagjie/Data-Science
-gh-badge: [star, fork, follow]
-tags: [Python]
----
-
 # Customer Longtime Value in Python
 
 This notebook goes through the calculation in [Practical Guide to Calculating Customer Lifetime Value (CLV)](https://gormanalysis.com/practical-guide-to-calculating-customer-lifetime-value-clv/) with Python. It mainly applies pandas dataframe to deal with the dataset.
