@@ -3,7 +3,7 @@ layout: post
 title: Data Science Skills Overview
 subtitle: What skills needed for a data scientist?
 bigimg: /img/path.jpg
-tags: [books, test]
+tags: [Overview]
 ---
 
 This post is to write down some skillsets that data scientists must have. Unlimited to:

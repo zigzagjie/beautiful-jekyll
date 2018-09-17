@@ -1,3 +1,11 @@
+---
+layout: post
+title: Data Preprocessing with Melbourne Housing Data
+subtitle: Preprcessing is the key to the success
+gh-repo: zigzagjie/datascience
+gh-badge: [star, fork, follow]
+tags: [Python]
+---
 
 # Data Preprocessing
 

@@ -4,7 +4,7 @@ title: Explore Network with Movie Dataset
 subtitle: Visualization with NetworkX in Python
 gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]
-tags: [Pandas]
+tags: [Pandas,Visualization]
 ---
 
 # Association Rules applied in Movie database
