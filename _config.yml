@@ -25,7 +25,7 @@ description: This is Jie Lou's personal website to showcase some awesome project
 navbar-links:
   About Me: "aboutme"
   Tags: "https://zigzagjie.github.io/tags/"
-  projects: "https://zigzagjie.github.io/projects/"
+#  projects: "https://zigzagjie.github.io/projects/"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
