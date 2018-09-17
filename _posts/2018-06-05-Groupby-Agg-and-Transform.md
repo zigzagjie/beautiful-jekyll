@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relational Dataset Manipulation
+title: Groupby with Aggregation and Transform function
 subtitle: How to merge datasets in pandas?
 gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]

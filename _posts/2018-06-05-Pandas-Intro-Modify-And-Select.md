@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relational Dataset Manipulation
+title: Radar Graph with Animation
 subtitle: How to merge datasets in pandas?
 gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]
