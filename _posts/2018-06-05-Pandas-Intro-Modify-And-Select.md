@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Radar Graph with Animation
-subtitle: How to merge datasets in pandas?
+title: Pandas Intro Modify and Select
+subtitle: Starter package to Pandas
 gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]
 tags: [Pandas]

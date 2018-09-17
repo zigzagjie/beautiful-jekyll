@@ -1,3 +1,11 @@
+---
+layout: post
+title: Data Visualization with Melbourne Housing Dataset
+subtitle: Visualization makes our job easier!
+gh-repo: zigzagjie/Data-Science
+gh-badge: [star, fork, follow]
+tags: [Visualization]
+---
 
 # Data Visualization is Fun!
 
