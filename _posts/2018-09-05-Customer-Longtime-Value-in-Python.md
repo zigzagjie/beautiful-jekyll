@@ -2,7 +2,7 @@
 layout: post
 title: Customer Longtime Value in Python
 subtitle: how to get customer longtime value in python?
-gh-repo: daattali/beautiful-jekyll
+gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]
 tags: [Python]
 ---

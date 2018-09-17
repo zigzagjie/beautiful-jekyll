@@ -2,7 +2,7 @@
 layout: post
 title: Radar Graph with Animation
 subtitle: Make graph move: animations in matplotlib
-gh-repo: daattali/beautiful-jekyll
+gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]
 tags: [Visualization]
 ---
