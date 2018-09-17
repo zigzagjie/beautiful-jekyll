@@ -18,18 +18,18 @@ I love Data Science, and expect to be a data scientist after graduation. With my
  
 
 ## My experience with Data
-- Animal Social Network
+### Animal Social Network
 
 When I studied at MIZZOU, I completed a one-year research project about animal social network of dolphins and whales supervised by Dr. Schliep. I read several papers on animal association tests and competition tests with various statistical methods. Then, I wrote functions in R to realize the test. The most important technique is Markov chain Monte Carlo (MCMC) we applied to simulate the interactions between species. Finally, I wrote a report and made a presentation to the department.With the visualization and statistical analyses conducted in R, for the first time, I tasted the joy of analyzing big datasets and drive meaning insights. With great curiosity, I started thinking about applying data analytics to humans and business world. 
 
 ![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/map.jpeg)
 ![](https://raw.githubusercontent.com/zigzagjie/jieloudata/master/img/network.png)
 
-- User Segmentation at Autodesk
+### User Segmentation at Autodesk
 
 During the summer in 2018, I worked at Autodesk as an intern data scientist. I was responsible for two data projects involving the entire data pipeline from data cleaning, data exploration, visualization, modeling and presentation. My analysis in user configuration with informative graphs and k means clustering results provided a big picture of customer segmentation for the AutoCAD feature development team. In the process of analyzing, I also applied association rules and visualized the connections between drawing primitives with NetworkX in Python. I believe data science is not just about cutting-edge techniques, it is more about communicate the story behind numbers. The job to uncover the mystery of patterns is charming and inspiring for me. Therefore, how can I miss the opportunity to work with awesome data scientists at Yelp? Yelp users are interacting with local business all the time in the form of leaving reviews. Understanding customer behavior is essential to dig interests and improve the service. 
 
-- Computer Vision Internship at Augment Space
+### Computer Vision Internship at Augment Space
 
 From the beginning of year 2018, I embarked on a journey that I have never been, the deep learning area. As an intern at Augment Space in Adelaide, I implemented the object detection algorithms on the property images. Moreover, I researched image matching algorithms and realized the motion analysis of images. During this internship, I self-learned deep learing from Coursera and got several certifications. 
 
@@ -45,11 +45,14 @@ From the beginning of year 2018, I embarked on a journey that I have never been,
 - Business sense
 
 ## Topics I am interested in
-- Social Network Analysis
+
+I believe a good data scientist should be good at communicating the findings. I am more interested in showcasing the results from data analysis and make instant impacts. 
+
+### Social Network Analysis
 
     The world is full of networks. The form of network is not just limited to network on humans' connections like Facebook. Actually, network analysis on Facebook has yielded a lot of fun findings. Moreover, the interactions between people and jobs, people and local businesses are also of interest. Digging the mystery behind the network is a great charm to me.
 	
-- Analytics in Entertainment Industry
+### Analytics in Entertainment Industry
 
      I love music and movies. I like drama and celebrities. I know some production and entertainment companies have applied machine learning to serve customers better in different ways, such as predicting the taste of audience, recommend potential likeable movies and music to customers. I would love to learn more in this area.
 
