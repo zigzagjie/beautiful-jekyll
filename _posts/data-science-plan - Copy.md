@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Science Four-Month Plan
-subtitle: Some important deadlines for my self-learning path
+title: Data Science Skills Overview
+subtitle: What skills needed for a data scientist?
 bigimg: /img/path.jpg
 tags: [books, test]
 ---
