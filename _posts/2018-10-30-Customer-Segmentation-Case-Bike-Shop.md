@@ -4,7 +4,7 @@ title: Customer Segmentation using K-means clustering
 subtitle: Clustering for bikeshops
 gh-repo: zigzagjie/Data-Science
 gh-badge: [star, fork, follow]
-tags: [Pandas,Clustering]
+tags: [Pandas,Clustering,Business]
 ---
 
 
