@@ -1021,7 +1021,9 @@ From model we can give some suggestions:
 3. It seems that Users from UK and US are more likely to be converted. Is it because the language issue? Did we translate well on the Chinese and Gernman Version website. We should consider the language obstacle issues.
 4. Old users can obviously generate higher conversion rate. Do we have loyalty programs to retain old customers? Maybe we should think of ways to convert customers into old users first.
 
-### Final model is built with the original dataset.
+#### Review
+
+1. We haven't try feature selection and interaction terms in the model. They can make a chance.
 
 
 
