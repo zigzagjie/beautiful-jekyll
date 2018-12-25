@@ -1,5 +1,11 @@
-
-# Bank Failure Prediction 
+---
+layout: post
+title: Bank Failure Prediction 
+subtitle: Can you predict which bank to collapse?
+gh-repo: zigzagjie/Data-Science
+gh-badge: [star, fork, follow]
+tags: [Pandas,Classification]
+---
 
 This is my solution to the homework 2 of 95851 Data Science for Product Managers. I believe it is a good chance to apply easy classification model to predict bank failure. 
 
